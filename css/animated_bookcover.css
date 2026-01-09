@@ -1,0 +1,487 @@
+@font-face {
+    font-family: typewriter;
+    src: url(../fonts/JMH\ Typewriter.ttf);
+}
+
+.Bird {
+
+    position: absolute;
+    width: 400px;
+    height: 600px;
+
+    background-image: url(../images/Bird.png);
+
+    top: -360px;
+    left: 80px;
+
+    z-index: 100;
+
+}
+
+.Offset {
+
+    left: 480px;
+
+}
+
+.CoverContainer {
+
+    background-color: #FB7C5B;
+    background-size: 100% 100%;
+    height: 600px;
+    width: 400px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    overflow: hidden;
+
+}
+
+.YellowFont {
+
+    color: #FFC30F;
+    font-family: "Tilt Warp", sans-serif;
+    text-align: center;
+
+}
+
+.WhiteFont {
+
+    color: #FAF9FF;
+    font-family: "Epilogue", sans-serif;
+
+}
+
+.ColorLoop {
+
+    animation: loop_color 5s infinite;
+
+}
+
+.ColorLoop2 {
+
+    animation: loop_color_2 5s infinite;
+
+}
+
+.Delay2 {
+    animation-delay: 0.625s;
+}
+
+.Delay3 {
+    animation-delay: 1.25s;
+}
+
+.Delay4 {
+    animation-delay: 1.875s;
+}
+
+.Delay5 {
+    animation-delay: 2.5s;
+}
+
+.Delay6 {
+    animation-delay: 3.125s;
+}
+
+.Delay7 {
+    animation-delay: 3.75s;
+}
+
+.Delay8 {
+    animation-delay: 4.375s;
+}
+
+@keyframes loop_color {
+    0% {color: #FFC30F;}
+    20% {color: white}
+    40% {color: #FFC30F;}
+    100% {color: #FFC30F;}
+}
+
+@keyframes loop_color_2 {
+    0% {color: #FFC30F;}
+    20% {color: #ffd148}
+    40% {color: #FFC30F;}
+    100% {color: #FFC30F;}
+}
+
+.Title {
+
+    letter-spacing: -8px;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    font-size: 72px;
+    transform: translate(-50%, -50%) scale(1.15, 1.35);
+
+}
+
+.Space {
+    color: transparent;
+}
+
+.Delay2_2 {
+    animation-delay: 0.385s;
+}
+
+.Delay2_3 {
+    animation-delay: 0.77s;
+}
+
+.Delay2_4 {
+    animation-delay: 1.155s;
+}
+
+.Delay2_5 {
+    animation-delay: 1.54s;
+}
+
+.Delay2_6 {
+    animation-delay: 1.925s;
+}
+
+.Delay2_7 {
+    animation-delay: 2.31s;
+}
+
+.Delay2_8 {
+    animation-delay: 2.695s;
+}
+
+.Delay2_9 {
+    animation-delay: 3.08s;
+}
+
+.Delay2_10 {
+    animation-delay: 3.465s;
+}
+
+.Delay2_11 {
+    animation-delay: 3.85s;
+}
+
+.Delay2_12 {
+    animation-delay: 4.235s;
+}
+
+.Delay2_13 {
+    animation-delay: 4.62s;
+}
+
+.Author {
+
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 93%;
+    font-size: 28px;
+    letter-spacing: 0px;
+    transform: translate(-50%, -50%) scale(1, 1.35);
+
+}
+
+.Small {
+
+    font-size: 8px;
+    line-height: 12px;
+
+}
+
+.Medium {
+
+    font-size: 19px;
+
+}
+
+.TypeWriterFont {
+
+    position: absolute;
+    font-size: 11px;
+    font-family: typewriter;
+
+}
+
+.Novel {
+
+    position: relative;
+    text-align: center;
+    padding-top: 14px;
+    padding-left: 14px;
+    letter-spacing: 2px;
+    font-weight: 600;
+
+}
+
+.Quote {
+
+    position: relative;
+    font-size: 9px;
+    text-align: center;
+    padding-top: 6px;
+    padding-left: 30px;
+    padding-right: 20px;
+    letter-spacing: 2px;
+    line-height: 17px;
+    font-weight: 600;
+
+}
+
+.Prize {
+
+    background-color: #FAF9FF;
+    border-left: 0px solid #FAF9FF;
+    border-bottom: 0px solid #FAF9FF;
+    padding-left: 7px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 7%;
+    top: 21%;
+    font-weight: 600;
+    overflow: hidden;
+    transform: scale(0);
+    opacity: 0%;
+
+}
+
+.CoverContainer:hover .Prize {
+    
+    animation: Prize_Anim 4s ease-in-out;
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards;
+
+    opacity: 100%;
+}
+
+@keyframes Prize_Anim {
+    0% {transform: scale(0); height: 100px; width: 100px; opacity: 0%; border-radius: 50%;}
+    20% {transform: scale(20); height: 100px; width: 100px; border-width: 0px; opacity: 50%; border-radius: 50%;}
+    40% {transform: scaleX(20) scaleY(1); height: 0px; width: 100px; border-width: 7px; opacity: 100%; border-radius: 0%;}
+    60% {transform: scaleX(1) scaleY(1); height: 0px; width: 100px; border-width: 7px; background-color: #FAF9FF;}
+    80% {transform: scaleX(1) scaleY(1); height: 100px; width: 100px; border-width: 7px; background-color: #FAF9FF;}
+    100% {transform: scaleX(1) scaleY(1); height: 100px; width: 100px; border-width: 7px; background-color: transparent}
+}
+
+.ShockwaveContainer {
+
+    position: absolute;
+    left: 50px;
+    top: 150px;
+
+}
+
+.Shockwave {
+
+    width: 75px;
+    height: 75px;
+    background-color: #ffffff;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 100%;
+    transform: scale(0);
+
+}
+
+.CoverContainer:hover .Shockwave {
+
+    animation: shockwave_anim 10s;
+    animation-delay: 1s;
+
+}
+
+@keyframes shockwave_anim {
+    0% {transform: scale(0);}
+    50% { transform: scale(15);}
+    100% { transform: scale(15);}
+}
+
+
+.Top_Rect_Spacing {
+
+    height: 108px;
+
+}
+
+.Rect_Container {
+
+    position: relative;
+    height: 37px;
+    margin-bottom: 6.5px;
+    width: 200%;
+    display: flex;
+
+    z-index: -1;
+
+}
+
+.Brown_Rect {
+
+    height: 37px;
+    background-color: #4B3323;
+    
+}
+
+.Empty {
+    height: 37px;
+}
+
+.Rect_2 {
+    width: 2px;
+}
+
+.Rect_5 {
+    width: 5px;
+}
+
+.Rect_10 {
+    width: 10px;
+}
+
+.Rect_15 {
+    width: 15px;
+}
+
+.Rect_25 {
+    width: 25px;
+}
+
+.Rect_30 {
+    width: 30px;
+}
+
+.Rect_40 {
+    width: 40px;
+}
+
+.Rect_50 {
+    width: 50px;
+}
+
+.Rect_60 {
+    width: 60px;
+}
+
+.Rect_80 {
+    width: 80px;
+}
+
+.Rect_100 {
+    width: 100px;
+}
+
+.Rect_110 {
+    width: 110px;
+}
+
+.Rect_140 {
+    width: 140px;
+}
+
+.Rect_170 {
+    width: 120px;
+}
+
+.Animation_1 {
+
+    animation: anim1 5s infinite linear;
+
+}
+
+@keyframes anim1 {
+    from {left: 0%}
+    to {left: -99%}
+}
+
+.Animation_2 {
+
+    animation: anim2 4s infinite linear;
+
+}
+
+@keyframes anim2 {
+    from {left: -100%}
+    to {left: 0%}
+}
+
+.Animation_3 {
+
+    animation: anim3 3s infinite linear;
+
+}
+
+@keyframes anim3 {
+    from {left: 0%}
+    to {left: -94%}
+}
+
+.Animation_4 {
+
+    animation: anim4 5.5s infinite linear;
+
+}
+
+@keyframes anim4 {
+    from {left: 0%}
+    to {left: -100%}
+}
+
+.Animation_5 {
+
+    animation: anim5 5s infinite linear;
+
+}
+
+@keyframes anim5 {
+    from {left: -100%}
+    to {left: 0%}
+}
+
+.Animation_6 {
+
+    animation: anim6 4s infinite linear;
+
+}
+
+@keyframes anim6 {
+    from {left: 0%}
+    to {left: -100%}
+}
+
+.Animation_7 {
+
+    animation: anim7 14s infinite linear;
+
+}
+
+@keyframes anim7 {
+    from {left: 0%}
+    to {left: -100%}
+}
+
+.Animation_89 {
+
+    animation: anim89 5s infinite linear;
+
+}
+
+@keyframes anim89 {
+    from {left: -100%}
+    to {left: 0%}
+}
+
+.Animation_10 {
+
+    animation: anim10 4s infinite linear;
+
+}
+
+@keyframes anim10 {
+    from {left: 0%}
+    to {left: -101%}
+}
